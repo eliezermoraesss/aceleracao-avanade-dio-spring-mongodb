@@ -8,12 +8,16 @@ public interface BookService {
 
     Book create(Book book);
 
-    Book delete(String id);
+    Boolean delete(String id);
 
     List<Book> getAll();
 
-    Book update(Book book);
+    List<Book> getByCriteria(String criteria, String search);
 
     Book getById(String id);
+
+    Boolean update(Book book);
+
+    
     
 }
